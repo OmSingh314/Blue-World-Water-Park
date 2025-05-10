@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueWorld Park</title>
+    <link rel="shortcut icon" href="Assests/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="index.html"><img src="Assests/logo.png" alt="BlueWorld Logo"></a>
+        <div class="menu-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div class="nav-items">
+            <div class="dropdown">
+                <button class="dropbtn">Park Info</button>
+                <div class="dropdown-content">
+                  <a href="/park-info.html#park-tour">Park Tour</a>
+                  <a href="park-info.html#park-map">Park Map</a>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <button class="dropbtn">Rides</button>
+                <div class="dropdown-content">
+                  <a href="rides.html#thrill-rides">Thrill Rides</a>
+                  <a href="rides.html#family-rides">Family Rides</a>
+                  <a href="rides.html#kids-zone">Kids' Zone</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Food and Shopping</button>
+                <div class="dropdown-content">
+                  <a href="/thrill-rides">Aquaria</a>
+                  <a href="/family-rides">Bun n Burger</a>
+                  <a href="/kids-rides">Rola Cola</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Past Events</button>
+                <div class="dropdown-content">
+                  <a href="/thrill-rides">Birthday Parties</a>
+                  <a href="/family-rides">Social Parties</a>
+                  <a href="/kids-rides">Weddings</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Tickets and Timings</button>
+                <div class="dropdown-content">
+                  <a href="/thrill-rides">Rate Card</a>
+                  <a href="/family-rides">Park Timings</a>
+                  <!-- <a href="/kids-rides"></a> -->
+                </div>
+              </div>
+      </div>
+      <div id="cursor"></div>
+      <div id="cursor-blur"></div>
+      <!-- In your head or before closing body -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
