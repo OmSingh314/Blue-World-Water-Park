@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueWorld Park</title>
+  <link rel="shortcut icon" href="Assests/logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div id="cursor"></div>
+  <div id="cursor-blur"></div> -->
+  <div id="nav-placeholder"></div>
+  </div>
+
+  <div id="video-container">
+    <video autoplay loop muted src="Assests/background.mp4"></video>
+  </div>
+  <div id="main">
+    <div id="page1">
+      <h1>EAT. DRINK. SWIM.</h1>
+      <h2>WELCOME TO BLUE WORLD, KANPUR!</h2>
+      <p>
+        Your premier destination for thrilling water adventures and unforgettable aquatic experiences. Dive into fun
+        with our exciting rides, pristine pools, and family-friendly attractions!
+      </p>
+      <!-- <div id="arrow">
+        <i class="ri-arrow-down-line"></i>
+      </div> -->
+    </div>
+    <div id="page2">
+      <div id="scroller">
+        <div id="scroller-in">
+          <h4>Park Info</h4>
+          <h4>Rides</h4>
+          <h4>Food and Shopping</h4>
+          <h4>Past Events</h4>
+          <h4>Tickets and Timings</h4>
+        </div>
+      </div>
+      <div id="about-us">
+        <img src="Assests/bridgeimg.avif" alt="">
+        <div id="about-us-in">
+          <h3>ABOUT US</h3>
+          <p>
+            Located in the heart of Kanpur, our world-class water park and entertainment hub offer thrilling rides, wave pools, lazy rivers, and exciting attractions for visitors of all ages.At Blue World Kanpur, we prioritize safety, cleanliness, and unmatched guest experiences, ensuring every visit is filled with joy and unforgettable memories. Whether you're seeking a family getaway, a fun day with friends, or a refreshing escape from the heat, our park is designed to provide non-stop excitement and relaxation.
+          </p>
+        </div>
+        <img src="Assests/rides3img.avif" alt="">
+      </div>
+      <div id="cards-container">
+        <div class="card" id="card1">
+          <div class="overlay">
+            <h4>Rides</h4>
+            <p>
+              At Blue World Kanpur, we offer a mix of high-speed slides, relaxing lazy rivers, and wave pools to keep your heart racing and your spirits high.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="card2">
+          <div class="overlay">
+            <h4>Food & Shopping</h4>
+            <p>
+              Indulge in delicious snacks and refreshing beverages at our food stalls, and take home fun souvenirs from our vibrant shopping zone!
+            </p>
+          </div>
+        </div>
+        <div class="card" id="card3">
+          <div class="overlay">
+            <h4>Past Events</h4>
+            <p>
+              Take a look back at our thrilling past events, featuring live performances, special celebrations, and non-stop entertainment!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="green-div">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+        <h4>
+          SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX
+        </h4>
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+      </div>
+    </div>
+    <div id="page3">
+      <p>
+        Excellent couple of hours, relax and enjoy in the fun. Staff were
+        accommodating, friendly and very helpful. Café on site for
+        refreshments etc. Will keep children enterntained during the holidays.
+        Worth a visit if you haven't been.
+      </p>
+      <img id="colon1" src="Assests/left-quotes.png" alt="">
+      <img id="colon2" src="Assests/right-quotes.png" alt="">
+
+    </div>
+    <div id="footer-placeholder"></div>
+    
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  
+  <script>
+    // Load nav
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        initNav();
+      });
+  
+    // Load footer
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+  
+</body>
+</html>
